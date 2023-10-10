@@ -12,7 +12,7 @@ go get github.com/keithzh09/redlock-go
 ## Usage
 Lock:
 ```golang
-import redlock github.com/keithzh09/redlock-go
+import redlock "github.com/keithzh09/redlock-go"
 
 ctx := context.Background()
 err = rl.Lock(ctx, "key_name", time.Second*5)
@@ -20,7 +20,7 @@ err = rl.Lock(ctx, "key_name", time.Second*5)
 
 UnLock:
 ```golang
-import redlock github.com/keithzh09/redlock-go
+import redlock "github.com/keithzh09/redlock-go"
 
 ctx := context.Background()
 rl.UnLock(ctx)
